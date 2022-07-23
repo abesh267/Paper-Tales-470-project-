@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home | PaperTales</title>
+    <!-- Favicon icon -->
+    <link rel="icon" href="{{asset('/')}}assets/img/favicon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{asset('/')}}/assets/css/all.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{asset('/')}}/assets/css/bootstrap.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="{{asset('/')}}/assets/css/style.css">
+</head>
+<body>
+<!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm text-white navbar-white p-1 border-bottom" id="nav-top">
+    <div class="container">
+        <a href="" class="logo-img"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-collapse">
+            <ul class="navbar-nav ">
+                <li class="nav-item px-2 ">
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a href="" class="nav-link">Books</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a href="" class="nav-link">Discount's Book</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" data-toggle="dropdown">
+                            <span class="image-circle"><img src="/assets/img/user-placeholder 3.png" width="30" alt=""></span>
+                            Admin
+                        </a>
+                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="/admin-home">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-muted"></i>
+                                    Profile
+                                </a>
+                                                        <a class="dropdown-item" href="/logout">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-muted"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</nav>
+<!-- NAVBAR END -->
+<!-- HEADER -->
+<section class="header py-2 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="headings">
+                    <h3><a href="" class="text-secondary"><b class="text-danger">Paper</b> Tales</a></h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <form action="/all-books">
+                    <div class="input-group input-group-sm m-1">
+                        <input type="text" name="term" value="" class="form-control" placeholder="Search Book....">
+                        <div class="input-group-append">
+                            <button class="btn btn-danger" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div class="shopping-cart text-right">
+                    <a href="/cart/page" class="text-danger"><i class="fas fa-shopping-cart fa-2x m-1"></i>
+                                            </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- HEADER END -->
+
+    <!-- Slider Area -->
+    <section class="welcome-area">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slider-img slider-bg-1"></div>
+                    <div class="carousel-caption">
+                        <h2>Thrilling</h2>
+                        <p class="d-none d-md-block">Slide Text 1</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slider-img slider-bg-2"></div>
+                    <div class="carousel-caption">
+                        <h2>Self Love</h2>
+                        <p class="d-none d-md-block">Slide Text 2</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slider-img slider-bg-3"></div>
+                    <div class="carousel-caption">
+                        <h2>Manga</h2>
+                        <p class="d-none d-md-block">Slide Text 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Content -->
+                <div class="col-md-4">
+    <div class="sidebar-items">
+        <div class="card my-4">
+            <div class="card-header bg-dark text-white">
+                <h4>Ctaegories</h4>
+            </div>
+            <div class="card-body">
+                <ul class="ctg-list">
+                                        <li class="ctg-item">
+                        <a href="/category/business-studies" class="ctg-link d-block">Thriller</a>
+                    </li>
+                                        <li class="ctg-item">
+                        <a href="/category/economics" class="ctg-link d-block">Self help</a>
+                    </li>
+                                        <li class="ctg-item">
+                        <a href="/category/engineering" class="ctg-link d-block">Non Fiction</a>
+                    </li>
+                                        <li class="ctg-item">
+                        <a href="/category/literature" class="ctg-link d-block">Manga</a>
+                    </li>
+                                        <li class="ctg-item">
+                        <a href="/category/medical" class="ctg-link d-block">Graphic Novel</a>
+                    </li>
+                                        <li class="ctg-item">
+                        <a href="/category/sociology" class="ctg-link d-block">Young Adult</a>
+                    </li>
+                                        <li class="ctg-item">
+                        <a href="/category/text-books" class="ctg-link d-block">Bookmarks</a>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+        
+                <!-- //Sidebar End -->
+                <div class="col-md-8">
+                    <div class="content-area">
+                        <div class="card my-4">
+                            <div class="card-header bg-dark">
+                                <h4><a href="/category/Thriller" class="text-white">Thriller</a></h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                                                                                                        <div class="col-lg-3 col-6">
+                                                <div class="book-wrap">
+                                                    <div class="book-image mb-2">
+                                                        <a href="/book/48"><img src="/assets/img/book_13.jpg" alt=""></a>
+                                                                                                                   
+                                                                                                            </div>
+                                                    <div class="book-title mb-2">
+                                                        <a href="/book/48">The Push</a>
+                                                    </div>
+                                                    <div class="book-author mb-2">
+                                                        <small>By Ashley Audrain</small>
+                                                    </div>
+                                                    <div class="pbook-price mb-3">
+                                                                                                                    <span class="line-through mr-3">&#2547;270</span>
+                                                                                                                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                    <div class="col-lg-3 col-6">
+                                                <div class="book-wrap">
+                                                    <div class="book-image mb-2">
+                                                        <a href=""><img src="/assets/img/book_2.jpg" alt=""></a>
+                                                                                                                    
+                                                                                                            </div>
+                                                    <div class="book-title mb-2">
+                                                        <a href="/book/45">Lock Every Door</a>
+                                                    </div>
+                                                    <div class="book-author mb-2">
+                                                        <small>By Riley Sager</small>
+                                                    </div>
+                                                    <div class="pbook-price mb-3">
+                                                                                                                    <span class="line-through mr-3">&#2547;280</span>
+                                                                                                                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                    <div class="col-lg-3 col-6">
+                                                <div class="book-wrap">
+                                                    <div class="book-image mb-2">
+                                                        <a href=""><img src="/assets/img/book_21.jpg" alt=""></a>
+                                                                                                                   
+                                                                                                            </div>
+                                                    <div class="book-title mb-2">
+                                                        <a href="/book/39">The Silent Patient</a>
+                                                    </div>
+                                                    <div class="book-author mb-2">
+                                                        <small>By Alex Michaelides</small>
+                                                    </div>
+                                                    <div class="pbook-price mb-3">
+                                                                                                                    <span class="line-through mr-3">&#2547;160</span>
+                                                                                                                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                    <div class="col-lg-3 col-6">
+                                                <div class="book-wrap">
+                                                    <div class="book-image mb-2">
+                                                        <a href="/book/35"><img src="/assets/img/book_17.jpg" alt=""></a>
+                                                                                                                   
+                                                                                                            </div>
+                                                    <div class="book-title mb-2">
+                                                        <a href="http://127.0.0.1:8000/book/35">The Murder of Roger Ackroyd</a>
+                                                    </div>
+                                                    <div class="book-author mb-2">
+                                                        <small>By Agatha Christie</small>
+                                                    </div>
+                                                    <div class="pbook-price mb-3">
+                                                                                                                    <span class="line-through mr-3">&#2547;180</span>
+                                                                                                                
+                                                    </div>
+                                                </div>
+                                            </div>
+          
+                        <div class="card my-4">
+                            <div class="card-header bg-dark">
+                                <h4><a href="/category/literature" class="text-white">Manga</a></h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                                                                                                        <div class="col-lg-3 col-6">
+                                                <div class="book-wrap">
+                                                    <div class="book-image mb-2">
+                                                        <a href=""><img src="/assets/img/book_14.jpg" alt=""></a>
+                                                                                                            </div>
+                                                    <div class="book-title mb-2">
+                                                        <a href="/book/46">Tomie</a>
+                                                    </div>
+                                                    <div class="book-author mb-2">
+                                                        <small>By Junji Ito</small>
+                                                    </div>
+                                                    <div class="pbook-price mb-3">
+                                                                                                                <span class="">&#2547;480</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                    <div class="col-lg-3 col-6">
+                                                <div class="book-wrap">
+                                                    <div class="book-image mb-2">
+                                                        <a href=""><img src="/assets/img/book_13.jpg" alt=""></a>
+                                                                                                                    
+                                                                                                            </div>
+                                                    <div class="book-title mb-2">
+                                                        <a href="/book/44">Attack on Titan All Volumes</a>
+                                                    </div>
+                                                    <div class="book-author mb-2">
+                                                        <small>By Hajime Isayama</small>
+                                                    </div>
+                                                    <div class="pbook-price mb-3">
+                                                                                                                    <span class="line-through mr-3">&#2547;5000</span>
+                                                                                                               
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                    <div class="col-lg-3 col-6">
+                                                <div class="book-wrap">
+                                                    <div class="book-image mb-2">
+                                                        <a href=""><img src="/assets/img/book_25.jpg" alt=""></a>
+                                                                                                                    
+                                                                                                            </div>
+                                                    <div class="book-title mb-2">
+                                                        <a href="/book/36">No Longer Human</a>
+                                                    </div>
+                                                    <div class="book-author mb-2">
+                                                        <small>By Junji Ito</small>
+                                                    </div>
+                                                    <div class="pbook-price mb-3">
+                                                                                                                    <span class="line-through mr-3">&#2547;450</span>
+                                                                                                                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                    <div class="col-lg-3 col-6">
+                                                <div class="book-wrap">
+                                                    <div class="book-image mb-2">
+                                                        <a href="/book/14"><img src="/assets/img/book_2.jpg" alt=""></a>
+                                                                                                            </div>
+                                                    <div class="book-title mb-2">
+                                                        <a href="/book/14"> Uzumaki</a>
+                                                    </div>
+                                                    <div class="book-author mb-2">
+                                                        <small>By Junji Ito</small>
+                                                    </div>
+                                                    <div class="pbook-price mb-3">
+                                                                                                                <span class="">&#2547;470</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                                            </div>
+                                <div class="show-more pt-2 text-right">
+                                    <a href="http://127.0.0.1:8000/category/Manga" class="text-secondary">See More <i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+<footer class="py-3 text-center border-top bg-light">
+    <div class="container">
+        <div class="go-to-top mb-2">
+            <a href="#nav-top" class="text-muted" title="Go to top"><i class="fas fa-angle-double-up"></i></a>
+        </div>
+        <div class="footer-text">
+            Copyright &copy; Paper Tales. All Right Reserved. <span id="year"></span>
+        </div>
+        <div class="social-icon mt-2">
+        <span class="mr-2">
+          <a href="https://www.facebook.com/papertales1105" class="text-primary"><i class="fab fa-facebook fa-2x"></i></a>
+        </span>
+           
+            <span class="mr-2">
+          <a href="https://www.instagram.com/papertales1105" class="text-primary"><i class="fab fa-instagram fa-2x"></i></a>
+        </span>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="/assets/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+<!-- custom scripts (optional) -->
+<script type="text/javascript" src="/assets/js/script.js"></script>
+
+</body>
+</html>
